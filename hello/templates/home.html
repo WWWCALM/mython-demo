@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+ <h1>my home</h1>
+<body>
+    <h1>首页</h1>
+<p>用户名: {{ username }} </p>
+<p>age: {{ age }} </p>
+<img src="{{ img_url }}" alt="">
+
+    <h3>userlist</h3>
+  {% for user in list_users %}
+  <p>nmae: {{ user.name }}</p>
+      <p>nmae: {{ user.age }}</p>
+{% endfor %}
+</body>
+
+
+</html>
